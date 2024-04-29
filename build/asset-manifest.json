@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/app-calcul.git/static/css/main.1a52d56b.chunk.css",
+    "main.js": "/app-calcul.git/static/js/main.326f575f.chunk.js",
+    "main.js.map": "/app-calcul.git/static/js/main.326f575f.chunk.js.map",
+    "runtime-main.js": "/app-calcul.git/static/js/runtime-main.7de6068f.js",
+    "runtime-main.js.map": "/app-calcul.git/static/js/runtime-main.7de6068f.js.map",
+    "static/js/2.bf86286d.chunk.js": "/app-calcul.git/static/js/2.bf86286d.chunk.js",
+    "static/js/2.bf86286d.chunk.js.map": "/app-calcul.git/static/js/2.bf86286d.chunk.js.map",
+    "static/js/3.11ebb954.chunk.js": "/app-calcul.git/static/js/3.11ebb954.chunk.js",
+    "static/js/3.11ebb954.chunk.js.map": "/app-calcul.git/static/js/3.11ebb954.chunk.js.map",
+    "static/js/4.cddfc277.chunk.js": "/app-calcul.git/static/js/4.cddfc277.chunk.js",
+    "static/js/4.cddfc277.chunk.js.map": "/app-calcul.git/static/js/4.cddfc277.chunk.js.map",
+    "index.html": "/app-calcul.git/index.html",
+    "precache-manifest.8fe9576e79dccbeb157d216fd40b90b6.js": "/app-calcul.git/precache-manifest.8fe9576e79dccbeb157d216fd40b90b6.js",
+    "service-worker.js": "/app-calcul.git/service-worker.js",
+    "static/css/main.1a52d56b.chunk.css.map": "/app-calcul.git/static/css/main.1a52d56b.chunk.css.map",
+    "static/js/2.bf86286d.chunk.js.LICENSE.txt": "/app-calcul.git/static/js/2.bf86286d.chunk.js.LICENSE.txt",
+    "static/js/3.11ebb954.chunk.js.LICENSE.txt": "/app-calcul.git/static/js/3.11ebb954.chunk.js.LICENSE.txt",
+    "static/js/4.cddfc277.chunk.js.LICENSE.txt": "/app-calcul.git/static/js/4.cddfc277.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7de6068f.js",
+    "static/js/3.11ebb954.chunk.js",
+    "static/css/main.1a52d56b.chunk.css",
+    "static/js/main.326f575f.chunk.js"
+  ]
+}

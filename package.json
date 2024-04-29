@@ -2,6 +2,7 @@
   "name": "nounou",
   "version": "0.1.0",
   "private": true,
+  "homepage":"https://ilaazayr.github.io/app-calcul.git" ,
   "dependencies": {
     "@react-pdf/layout": "^3.6.4",
     "@react-pdf/renderer": "^3.4.3",
@@ -23,7 +24,9 @@
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

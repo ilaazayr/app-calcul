@@ -1,0 +1,95 @@
+.nomEtBouton{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+
+
+.gridContrat{
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contrat{
+    padding: 2%;
+    width: 30%;
+    background: white;
+    border-radius: 25px 25px 25px 25px;
+    margin-bottom: 30px;
+    box-shadow: 2px 3px 25px 0 rgba(0, 0, 0, 0.3)
+}
+
+.prix{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.btnContrat{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.btnContratAddDelete{
+    border: none;
+    color: white;
+    background: linear-gradient(to right, #0E53DA, #8800DB);
+    border-radius: 15px;
+    width: 40%;
+    font-weight: bold;
+}
+
+.btnContratAdd{
+    border: none;
+    color: white;
+    background: linear-gradient(to right, #0E53DA, #8800DB);
+    border-radius: 25px;
+    width: 20%;
+    font-weight: bold;
+}
+
+.contenuPopup{
+    z-index: 1000 !important;
+    margin-top: 5%;
+    padding: 10%;
+    border-radius: 25px 25px 25px 25px;
+    margin-bottom: 30px;
+    box-shadow: 2px 3px 25px 0 rgba(0, 0, 0, 0.3);
+    background: white;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold; 
+    margin-bottom: 20px;
+}
+
+.modal-title{
+    font-weight: bold;
+}
+
+
+@media  (max-width: 971px) { 
+    .nomEtBouton{
+        flex-direction: column;
+    }
+
+    .btnContratAdd{
+        width: 60%;
+    }
+
+    .contrat{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 7%;
+    }
+ }

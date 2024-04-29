@@ -1,0 +1,39 @@
+nav{
+    color: white;
+    background-color: rgb(99, 1, 42);
+}
+nav a.nav-link, nav .navbar-brand,  .navbar-toggler{ 
+    color: white;
+}
+
+.active{
+    color: yellow;
+}
+/*
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    margin-top: 5px;
+    font-size: larger;
+}
+
+.deco {
+    border: none;
+    color: white;
+    background: linear-gradient(to right, #0E53DA, #8800DB);
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.btnConnection{
+    border: none;
+    color: white;
+    background: linear-gradient(to right, #0E53DA, #8800DB);
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.BtnAccueil{
+    display: flex;
+}*/

@@ -5,7 +5,9 @@
     margin-top: 10%;
 }
 
-
+.contrat h3{
+    border-bottom: 0.05em solid;
+}
 .gridContrat{
     margin-top: 5%;
     display: flex;
@@ -40,16 +42,16 @@
 .btnContratAddDelete{
     border: none;
     color: white;
-    background: linear-gradient(to right, #0E53DA, #8800DB);
+    background: #010a30;
     border-radius: 15px;
-    width: 40%;
+    width: 45%;
     font-weight: bold;
 }
 
 .btnContratAdd{
     border: none;
     color: white;
-    background: linear-gradient(to right, #0E53DA, #8800DB);
+    background: #010a30;
     border-radius: 25px;
     width: 20%;
     font-weight: bold;
@@ -91,5 +93,10 @@
         margin-left: auto;
         margin-right: auto;
         padding: 7%;
+    }
+    .modal-dialog{
+        width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     }
  }

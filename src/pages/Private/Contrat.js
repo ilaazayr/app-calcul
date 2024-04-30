@@ -343,7 +343,6 @@ export default function Contrat() {
         <div className='gridContrat'>{contrats.map((contrat) => 
             <div className='contrat'>
                 <h3>{contrat.name}</h3>
-                <hr></hr>
                 <div className='prix'>
                     <div>taux horaires</div><div>{contrat.TauxHoraire}€</div> 
                 </div>

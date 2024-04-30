@@ -5,6 +5,10 @@ import { signOut } from 'firebase/auth'
 import { useNavigate } from 'react-router-dom'
 import { auth } from '../firebase-config'
 import "../css/Nav.css";
+import { useState } from 'react'
+import {Icon} from 'react-icons-kit'
+import {menu} from 'react-icons-kit/feather/menu'
+import {x} from 'react-icons-kit/feather/x'
 
 export default function Navbar() {
 
@@ -24,62 +28,76 @@ export default function Navbar() {
         window.location.reload();
 
     }
+
+
+    const [toggle, setToggle]=useState(false);
+
+    const toggleSign =()=>{
+        toggleModals("signUp");
+        handleToggle();
+    }
+
+    const toggleSignIn =()=>{
+        toggleModals("signIn");
+        handleToggle();
+    }
+  const handleToggle=()=>{
+    setToggle(!toggle);
+  }
     if(!currentUser){
         return (
-            <nav className ="navbar ">
-       
-        
-        <div className='BtnAccueil'>
-            <button onClick={() => toggleModals("signUp")} className='btnConnection'>
-                S'inscrire
-            </button>
-            <button onClick={() => toggleModals("signIn")} className='btnConnection'>
-                Se connecter
-            </button>
+            <nav className={toggle?'navbar expanded':'navbar'}>
+             <h2 className='logo'>AssitCalcul</h2>
+        <div className='toggle-icon' onClick={handleToggle}>
+          {toggle?<Icon icon={x} size={28}/>:<Icon icon={menu} size={28}/>}
         </div>
-            </nav>
+
+        <ul className='links'>
+        <li className="nav-item active">
+        <a onClick={toggleSign} className='btnConnection'>S'inscrire</a>
+        </li>
+        <li className="nav-item active">
+        <a onClick={toggleSignIn} className='btnConnection'>Se connecter</a>
+        </li></ul></nav>
+            
           )
     }
     if(currentUser){
         return (
-    <nav className ="navbar navbar-expand-lg bg-body-tertiar">
-      <div className="container-fluid">
-      <a className="navbar-brand" href="#">Nounou</a>
-    <div className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </div>
-      <div className="collapse navbar-collapse" id="navbarNav">
-      <ul className="navbar-nav">
-        <li className="nav-item active">
-        <Link to="/private/private-home" className="nav-link">
-        Accueil
-        </Link>
-        </li>
+            
+            <nav className={toggle?'navbar expanded':'navbar'}>
+             <h2 className='logo'><Link to="/private/private-home" className="nav-link" onClick={handleToggle}>AssitCalcul</Link></h2>
+        <div className='toggle-icon' onClick={handleToggle}>
+          {toggle?<Icon icon={x} size={28}/>:<Icon icon={menu} size={28}/>}
+        </div>
+     
+      <ul className='links'>
+        
         <li className="nav-item">
-        <Link to="/private/contrat" className="nav-link">
+        <Link to="/private/contrat" className="nav-link" onClick={handleToggle}>
         Mes Contrats
         </Link>
         </li>
         <li className="nav-item">
-        <Link to="/private/calcul" className="nav-link">
+        <Link to="/private/calcul" className="nav-link" onClick={handleToggle}>
         Mon calcul
         </Link>
         </li>
         <li className="nav-item">
-        <Link to="/private/compte" className="nav-link">
+        <Link to="/private/compte" className="nav-link" onClick={handleToggle}>
             Mon compte
         </Link>
         </li>
        
         <li className="nav-item">
-            <button onClick={logOut} className='btn deco ms-2'>
+            <a onClick={logOut}>
                 Se déconnecter
-            </button></li>
+            </a></li>
         </ul>
-        </div>
         
-        </div>
             </nav>
+            
+   
           )
     }
  

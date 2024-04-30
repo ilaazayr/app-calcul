@@ -21,7 +21,7 @@ export default function Navbar() {
     const logOut = async () => {
         try{
             await signOut(auth)
-            navigate("/")
+            navigate("/app-calcul")
         }catch{
             alert("for some resaons we can't deconnect, please check your internet connexion and retry")
         }
